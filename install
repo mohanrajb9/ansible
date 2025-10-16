@@ -1,0 +1,29 @@
+# Chances are dependencies are already installed.
+# If so
+
+pip install ansible
+
+#For Debian
+
+sudo apt-add repository -y ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install -y ansible
+
+# For Redhat/Fedora
+
+# Centos6
+rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
+# RHEL/CENTOS7
+yum install epel-release
+
+# RHEL/CENTOS8
+dnf install epel-release
+
+# then
+
+dnf -y install ansible 
+
+# or
+
+yum -y install ansible
